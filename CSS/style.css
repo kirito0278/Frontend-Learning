@@ -1,0 +1,60 @@
+/* used to access local font */
+@font-face {
+    font-family: UI;
+    src: url(./adgroteskmedium.ttf);
+}
+
+/* CSS Boiler Plate */
+*{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* --------------------------- */
+
+
+h1{
+    /* Text Color Property[ALL H1 TAGS COLOR WILL CHANGE TO RED] */
+    color: rgb(107, 0, 0);
+
+    /* Text Specific Properties */
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    text-align:center;
+    text-transform: uppercase;
+}
+
+/* # is used to denote ids and . to denote classes*/
+#me{
+    color: bisque;
+    font-family: UI;
+}
+
+.hi{
+    /* Background color property */
+    background-color: chocolate;
+    /* using unique downloaded fonts */
+    font-family: SF Pro Display;
+}
+
+#box1{
+    height: 100px;
+    width: 100px;
+    background: radial-gradient(rgb(74, 18, 187),rgb(195, 9, 40));
+}
+#box2{
+    height: 200px;
+    width: 200px;
+    /* for bg gradient with multiple color and direction*/
+    background: linear-gradient(to right bottom,red 10%,orange 90%);
+    /* there is one more gradient called conic gradient */
+
+    background-image: url(./../HTML/download.jpeg);
+}
