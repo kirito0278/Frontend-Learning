@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+div{
+    height: 100%;
+    width: 100%;
+    background-image: url(./ichigo-bleach-rebirth-of-souls-4k-wallpaper-uhdpaper.com-43@5@d.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 100px;
+}
+button{
+    margin-top: 80px;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: orange;
+    border: 2px solid rgb(255, 255, 255);
+}
+button:hover{
+    background-color: rgb(220, 143, 0);
+}
+h1{
+    font-size: 140px;
+    font-weight: 600;
+    font-family: 'Felipa';
+    color: rgb(90, 73, 73);
+}

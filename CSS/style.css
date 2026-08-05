@@ -6,7 +6,7 @@
 
 /* CSS Boiler Plate */
 *{
-    background-color: black;
+    background-color:black;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,30 +18,31 @@ html,body{
 /* --------------------------- */
 
 
-h1{
+/* h1{ */
     /* Text Color Property[ALL H1 TAGS COLOR WILL CHANGE TO RED] */
-    color: rgb(107, 0, 0);
+    /* color: rgb(107, 0, 0); */
 
     /* Text Specific Properties */
-    font-size: 60px;
+    /* font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-style: italic;
     text-align:center;
     text-transform: uppercase;
-}
+} */
 
 /* # is used to denote ids and . to denote classes*/
-#me{
-    color: bisque;
+/* #me{
+    color: rgb(252, 190, 115);
     font-family: UI;
 }
 
-.hi{
+.hi{ */
     /* Background color property */
-    background-color: chocolate;
+    /* background-color: chocolate; */
     /* using unique downloaded fonts */
-    font-family: SF Pro Display;
+    /* font-family: SF Pro Display;
+    padding: 10px 20px;
 }
 
 #box1{
@@ -50,11 +51,44 @@ h1{
     background: radial-gradient(rgb(74, 18, 187),rgb(195, 9, 40));
 }
 #box2{
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 500px; */
     /* for bg gradient with multiple color and direction*/
-    background: linear-gradient(to right bottom,red 10%,orange 90%);
+    /* background: linear-gradient(to right bottom,red 10%,orange 90%); */
     /* there is one more gradient called conic gradient */
+/* 
+    background-image: url(./luffy-one-piece-4k-wallpaper-uhdpaper.com-41@5@o.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px 20px;
+} */
+/* button{
+    color: white;
+    background-color: darkcyan;
+    padding: 10px 20px;
+    margin: 10px 100px;
+    border-radius: 30px;
+    border: 2px dotted white;
+    font-size: 12px;
+    font-weight: 600;
+} */
 
-    background-image: url(./../HTML/download.jpeg);
+/* Practicing positioning */
+/* by using position property we unlock some other properties like top,bottom,right,left,z-index */
+#car1{
+    width: 200px;
+    height: 300px;
+    background-color: aquamarine;
+}
+#car2{
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    background-color:blueviolet;
+}
+#car3{
+    width: 290px;
+    height: 500px;
+    background-color:brown;
 }
