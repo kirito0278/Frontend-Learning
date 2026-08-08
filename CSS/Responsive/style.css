@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: darkcyan;
+}
+
+#inner{
+    height: 50%;
+    width: 50%;
+    background-color: beige;
+}
+
+#box1{
+    height: 20vh;
+    width: 90vw;
+    background-color: rgb(46, 76, 76);
+}
+
+#box2{
+    background-color: navy;
+    color: aliceblue;
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;  /* we can control child's size through parent */
+}
+
+h2{
+    font-size: 3em;
+}
+
+h4{
+    font-size: 2em;
+}
+
+p{
+    font-size: .5em;
+}
