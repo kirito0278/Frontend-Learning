@@ -2,43 +2,57 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
+
 }
 
 html,body{
     height: 100%;
     width: 100%;
+    background-color: gray;
 }
 
-#parent{
+/* display flex try to create flexible design when we inncrease divs they start to shrink */
+/* #parent{
+    background-color: black;
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: end;
-    /* justify-content: center; */
-    /* justify-content: space-around; */
-    justify-content: space-between;
-
-}
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    perspective: 200px; */
+    /* flex-wrap: wrap; */
+    /* if we don't wanna wrap we can use shrink property on childrens */
+/* } */
 
 /* if i want all div in same line (using position for it is not right way we use display property for this) */
+
+/* using posiiton not make it completely center for this we use transform with it */
 #car1{
     height: 200px;
     width: 200px;
     background-color: brown;
+    border: 2px solid yellow;
+    flex-shrink: 0;
 }
 #car2{
     height: 200px;
     width: 200px;
     background-color: gold;
+    border: 2px solid yellow;
+    flex-shrink: 0;
     /* position: absolute;
-    left: 200px;
-    top: 0; */
+    left: 50%;
+    top: 50%; */
+    /* not completely at center we will use transform*/
+    /* transform: translate(-50%,-50%); */
 }
 #car3{
     height: 200px;
     width: 200px;
     background-color: forestgreen;
+    border: 2px solid yellow;
+    flex-shrink: 0;
     /* position: absolute;
     top: 0;
     left: 400px; */
@@ -46,5 +60,139 @@ html,body{
 #car4{
     height: 200px;
     width: 200px;
-    background-color: rgb(246, 10, 10);
+    background-color: rgb(66, 0, 0);
+    border: 2px solid yellow;
+    flex-shrink: 0;
 }
+
+
+#transform{
+    width: 220px;
+    height: 300px;
+    background-image: url(https://images.unsplash.com/photo-1785828642909-676851fe3db2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    transform: rotateX(20deg);
+}
+
+
+/* justify-items: Aligns all grid items along the inline (horizontal) axis inside their respective grid cells.
+
+align-items: Aligns all grid items along the block (vertical) axis inside their respective grid cells.
+
+place-items: Shorthand property for setting both align-items and justify-items simultaneously.
+
+justify-content: Aligns the entire grid track architecture relative to the container border along the horizontal axis.
+
+align-content: Aligns the entire grid track architecture relative to the container border along the vertical axis.
+
+place-content: Shorthand property for setting both align-content and justify-content simultaneously. */
+
+#parent{
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    display: grid;
+    /* grid-template-columns:100px minmax(100px,auto); */
+    grid-template-columns: repeat(2,100px);
+    grid-template-rows:100px 150px 200px 250px 100px;
+    /* gap: 5px; */
+    /* row-gap: 2px;
+    column-gap: 5px; */
+    align-content: center;
+    /* align-items: center; */
+    /* justify-items: end; */
+    justify-content: space-between;
+}
+
+/* .child{
+    height: 50px;
+    width: 50px;
+    background-color: cadetblue;
+    border: 2px solid rgb(255, 255, 255);
+} */
+
+/* .child:nth-child(2n+1){
+    background-color: cornsilk;
+} */
+
+/* .child:nth-last-child(2){
+    background-color: wheat;
+}
+
+.child:nth-child(3){
+    background-color: rgb(235, 175, 235);
+}
+
+.child:nth-child(2){
+    background-color: darkgoldenrod;
+} */
+
+/* h1{
+    color: transparent;
+    font-size: 70px; */
+    /* background: linear-gradient(orange,yellow); */
+    /* background-image: url(https://plus.unsplash.com/premium_photo-1786075003905-069b244483fe?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+    /* we can also apply gif */
+    /* background-position: center;
+    background-clip: text; */
+    /* -webkit-text-stroke: 1px black;
+} */
+
+/* main{
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  70px 1fr 100px;
+    gap: 10px;
+}
+
+.child{
+    background-color: burlywood;  
+    border: 2px solid white;
+} */
+
+/* for complete lines use -1 as end value */
+/* #chiid1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+} */
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows:  60px 1fr 80px;
+    gap: 10px;
+    padding: 10px;
+    grid-template-areas: "header header"
+                          "aside section"
+                          "footer footer"
+    ;
+}
+
+header{
+    background-color: aquamarine;
+    grid-area: header;
+}
+
+aside{
+    background-color: blanchedalmond;
+    grid-area: aside;
+}
+
+section{
+    background-color: cadetblue;
+    grid-area: section;
+}
+
+footer{
+    background-color: cornsilk;
+    grid-area: footer;
+}
+

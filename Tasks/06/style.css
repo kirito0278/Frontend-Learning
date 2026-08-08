@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    background-color: rgb(70, 68, 68);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.cards{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.3);
+    font-family: 'Helvetica';
+    overflow: hidden;
+}
+
+.cards img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bottom-div{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(transparent,black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    color: white;
+    transition: transform 0.3s ease;
+    /* position: absolute; */
+    /* if we give position absolute it start to take height and width according to main instead of parent */
+}
+
+.bottom-div button{
+    font-size: 22px;
+    filter: saturate(0);
+    border-radius: 50%;
+}
+
+.cards:hover .bottom-div{
+    transform: translateY(-100%);
+}
