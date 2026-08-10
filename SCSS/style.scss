@@ -1,0 +1,61 @@
+@import "button";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+// mixin used to avoid repetitive code
+
+@mixin flexy(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+// // can take arguments which make it more dynamic
+// @mixin button-style($bg-color:blue){
+//     padding: 20px 30px;
+//     background-color:$bg-color;
+//     color: white;
+//     cursor: pointer;
+//     border: none;
+//     border-radius: 7px;
+//     outline: none;
+//     font-size: 18px;
+// }
+
+// nesting
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    @include flexy();
+
+
+    section{
+        height: 50%;
+        width: 50%;
+        background-color: burlywood;
+        gap: 10px;
+        @include flexy();
+
+        h1{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .btn-red{
+            @include button-style(blue,black,30px);
+        }
+        
+        .btn-blue{
+            @include button-style();
+            }
+    }
+}

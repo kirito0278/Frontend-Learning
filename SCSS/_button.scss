@@ -1,0 +1,14 @@
+// we have to create a scss file with _ to import it in main scss file
+
+// can take arguments which make it more dynamic
+
+@mixin button-style($bg-color:blue,$text-color:white,$text-size:18px){
+    padding: 20px 30px;
+    background-color:$bg-color;
+    color:$text-color;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    font-size: $text-size;
+}
