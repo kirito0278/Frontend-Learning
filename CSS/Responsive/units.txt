@@ -1,9 +1,39 @@
-UNITS--
-1.px (pixels) - fixed
-2.% (percentage) - depends on parent
-3.vw (viewport width) - depends on viewport's width
-4.vh (viewport height) - depends on viewport's height
-5.vmax (viewport maximum) - depends on maximum viewport
-6.vmin (viewport minimum) - depends on minimum viewport
-7.em - acc. to parent and can be controlled by parent
-8.rem - acc. to root and can be controlled by root
+UNITS-
+
+-->Absolute_Units
+1.px (pixels-device specific dots)
+2.pt (points-1/72 inch, mostly in print)
+3.cm (centimeters)
+4.mm (millimeters)
+5.in (inches)
+
+-->Relative_Units
+1.% (percentage) - relative to size of parent element (for width/height, padding/margins)
+    USE - flexible widths,heights
+
+
+2.vw (viewport width) - depends on viewport's width
+    USE - for fluid typography
+3.vh (viewport height) - depends on viewport's height
+    USE - splash screen(loading screen)
+        - full-page hero banners
+EXAMPLE-- If we have a device of dimensions 500px X 600px
+then, viewport's width= 500px
+viewport's height= 600px
+    100vw=> full viewport width=> 500px [1vw=>5px]
+    100vh=> full viewport height=> 500px [1vh=>6px]
+
+
+4.vmax (viewport maximum) - depends on maximum viewport
+5.vmin (viewport minimum) - depends on minimum viewport
+
+
+6.em - relative to the font size of its own or nearest ancestor [defined font size]
+    USE - button padding realtive to its own text size
+        - icons or spacing components
+7.rem - relative to root(<html>) font-size [by default-16px size]
+    USE - margins,padding(b/w sections)
+
+
+FLUID TYPOGRAPHY-
+--Responsive typography: clamp(lower limit,value,upper limit) with vw and px

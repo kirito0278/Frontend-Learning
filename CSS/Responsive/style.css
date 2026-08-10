@@ -10,7 +10,7 @@ html,body{
     background-color: black;
 }
 
-#box{
+/* #box{
     height: 200px;
     width: 200px;
     background-color: darkcyan;
@@ -34,10 +34,10 @@ html,body{
     width: 50%;
     margin: 20px;
     padding: 10px;
-    font-size: 20px;  /* we can control child's size through parent */
-}
-
-h2{
+    font-size: 20px;  
+} */
+/* we can control child's size through parent */
+/* h2{
     font-size: 3em;
 }
 
@@ -47,4 +47,15 @@ h4{
 
 p{
     font-size: .5em;
+} */
+
+
+html{
+    /* font-size: 1vw; */
+    font-size: clamp(5px,1vw,10vw);
+}
+
+h1{
+    font-size: 10rem;
+    color: white;
 }
