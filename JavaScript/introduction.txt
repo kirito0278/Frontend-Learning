@@ -1,0 +1,13 @@
+JS is a scripting language [A scripting language is a type of programming language designed to automate tasks, control existing software, and run without a manual compilation step. Instead of converting code into a standalone executable file beforehand like compiled languages do, scripting languages rely on an interpreter to translate and execute code line-by-line in real-time.]
+
+A style sheet language is a computer language used to express the visual presentation and layout of structured documents like HTML. The primary and most widely used styling language on the web is Cascading Style Sheets (CSS), which controls colors, fonts, spacing, and responsive design.
+
+A markup language is a system of symbols or tags added to a text document. It defines the structure, layout, and meaning of the content so a computer or web browser knows how to display or process it. It is not a programming language because it does not perform logic or calculations
+
+Creator of JS- Brandan Eich [working in Netscape build it in 15-16 days that's why it had so many bugs]
+There were so many bugs in the beginning,but after resolving it little by little, a most efficient version of JS came known as ES6 (we learn both ES5 and ES6)
+
+It was first build for only browsers after that companies started to build their own language for their browser which became a headache
+To stop all this a community was build known as ECMAScript[after that JS was selected for all browsers,this community monitor and manage all updates of JS]
+
+IMPORTANCE- from even a small animation to all kind of interactions are managed by JS
