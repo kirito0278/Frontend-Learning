@@ -55,3 +55,40 @@ if(!(temp<30)){
 }else{
     console.log("Pleasant");   // O/P- Hot
 }
+
+
+// -- Control Flow
+// Ques.1: Write a function getGrade(score) that:
+// -- Takes a student marks(0 to 100)
+// -- Returns the grade based on this logic:
+// 90-100 A+
+// 80-89 A
+// 70-79 B
+// 60-69 C
+// 33-59 D
+// 0-32 FAIL
+// Anything else    Inavalid Marks
+
+function getGrade(score) {
+    if(score<=32) return "Fail";
+    else if(score<=59) return "D";
+    else if(score<=69) return "C";
+    else if(score<=79) return "B";
+    else if(score<=89) return "A";
+    else if(score<=100) return "A+";
+    else return "Invaild Marks";
+}
+console.log(getGrade(3));
+
+// Ques.2 Rock-Paper-scissor logic
+function rps(user,comp) {
+    if(user === comp) return "DRAW";
+
+    if (user === "rock" && comp === "scissor") return "USER WINS";
+    if (user === "paper" && comp === "rock") return "USER WINS";
+    if (user === "scissor" && comp === "paper") return "USER WINS";
+
+    return "COMP WINS";
+}
+
+console.log(rps("rock","scissor"))
