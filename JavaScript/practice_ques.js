@@ -92,3 +92,41 @@ function rps(user,comp) {
 }
 
 console.log(rps("rock","scissor"))
+
+
+// FUNCTIONS
+// --1.BMI Calculator
+function BMI(weight,height) {
+    return weight/(height**2);
+}
+console.log(BMI(54,5.7).toFixed(3));
+
+// --2.Create reusable discount calculator(HOF)
+function discountCalc(discount) {
+    return function (price) {
+        return price - price*(discount/100);
+    }
+}
+let ten=discountCalc(10);
+let twenty=discountCalc(20);
+console.log(ten(1200));
+console.log(twenty(1200));
+
+//--3.Build a counter using closure
+function counter() {
+    let count=0;
+    return function() {
+        count++;
+        return count;
+    }
+}
+
+let c=counter();
+console.log(c()); //1
+console.log(c()); //2
+console.log(c()); //3
+console.log(c()); //4 //sustaining its value
+//whenever we use counter() it will use function where count will start with 0
+let d=counter();
+console.log(d()); //1
+
