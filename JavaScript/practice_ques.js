@@ -130,3 +130,12 @@ console.log(c()); //4 //sustaining its value
 let d=counter();
 console.log(d()); //1
 
+
+
+// AARAY
+// Insert "Red" and "Blue" at index 1 in this array:
+let colors = ["Green","Yellow"];
+// colors.splice(1,0); //nothing will happpen but
+// colors.splice(1,0,"Red","Blue"); //it will add both from index 1
+colors.splice(1,0,["Red","Blue"]); // it will add both at index 1
+
