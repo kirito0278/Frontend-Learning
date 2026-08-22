@@ -139,3 +139,11 @@ let colors = ["Green","Yellow"];
 // colors.splice(1,0,"Red","Blue"); //it will add both from index 1
 colors.splice(1,0,["Red","Blue"]); // it will add both at index 1
 
+
+// OBJECTS
+// Destructure the key "first-name" as a variable called firstName.
+const user = {
+    "first-name":"Harsh",
+};
+// let{first-name}=user; // not usable
+let {"first-name": firstname}=user;
