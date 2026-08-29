@@ -42,8 +42,19 @@ console.table(student);
 // │ age     │ 20      │
 // │ city    │ 'Delhi' │
 // └─────────┴─────────┘
-//propmt se jo bhi input loge vo string bn jayega //conversion??
-// nullish coalescing operator //29 31 33 34 35 little36 41day quees
+
+//prompt() se jo bhi input loge vo string bn jayega 
+//conversion??
+Number(value);       // Convert to number
+String(value);       // Convert to string
+Boolean(value);      // Convert to boolean
+parseInt(value);     // Convert to integer
+parseFloat(value);   // Convert to decimal number
+
+// NULLISH COALESCING OPERATOR: It (??) provides a default value only when the left-side value is null or undefined
+let name = null;
+let result = name ?? "Guest";
+console.log(result); // Guest
 
 // 1. for...of [Used to get the values/elements of an iterable like an array]
 let fruits2 = ["Apple", "Mango", "Banana"];
