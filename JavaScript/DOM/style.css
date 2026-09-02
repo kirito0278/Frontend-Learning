@@ -8,13 +8,18 @@ html,body{
     height: 100%;
     width: 100%;
     background-color: black;
+    color: aliceblue;
 }
 
-#box{
+/* #box{
     height: 100px;
     width: 100px;
-}
+} */
 
+main{
+    height: 100%;
+    width: 100%;
+}
 button{
     background-color: cadetblue;
     margin: 10px;

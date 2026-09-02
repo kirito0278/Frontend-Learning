@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF Pro Display";
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+main{
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 12px 10px; 
+    border-radius: 20px;
+    border: 2px solid rgb(48, 46, 46);
+}
+h1{
+    text-align: center;
+    font-size: 59px;
+    line-height: .4;
+}
+h2{
+    text-align: center;
+    font-size:13px;
+    font-weight: 200;
+    line-height: 0.2;
+}
+p{
+    text-align: center;margin-bottom: 29px;
+    font-weight: 900;
+    font-size: 13px;
+}
+button{
+    border: none;
+    background-color: rgb(67, 112, 245);
+    padding: 8px ;
+    border-radius: 20px;
+    color: aliceblue;
+    font-weight: 600;
+}
