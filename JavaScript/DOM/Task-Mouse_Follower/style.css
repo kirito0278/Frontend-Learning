@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo';
+}
+
+html,body{
+    height: 200%;
+    width: 100%;
+    background-color: black;
+    cursor: none;
+}
+
+img{
+    transform: translate(-50%,-50%) rotateZ(-90deg);
+    height: 50px;
+    position: fixed;
+}
