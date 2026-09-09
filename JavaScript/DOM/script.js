@@ -1,6 +1,7 @@
 // DOM - Document Object Model it allow Js to interact with HTML 
 //     - When a browser loads an HTML page, it converts the HTML document into a tree-like structure of objects. This structure is called the DOM.
 
+
 //EXAMPLE:
 // <!DOCTYPE html>
 // <html>
@@ -63,58 +64,41 @@
 
 
 
-// 4 Pillars of DOM:
 //  -- Selection of an element
         // -- querySelector
         // -- getElementById
         // -- getElementsByClassName
         // -- querySelectorAll
 
-//  -- Changing HTML
+var h1 = document.querySelector('h1')
+console.log(h1);
+
+
+//  -- Accessing Text/Content
         // -- textContent
         // -- innerHTML
         // -- innerText
 
-//  -- Changing CSS
-//  -- Event Listners
+// h1.innerHTML = '<i>Americayaa<i>'
+// h1.textContent = '<i>Americayaa<i>'
+// h1.innerText = '<i>Americayaa<i>'
+
+
+//  -- Attribute Manipulation
+        // -- getAttribute
+        // -- setAttribute
+        // -- removeAttribute
 
 
 
-// var h1 = document.querySelector('h1') // Selecting element
-// console.log(h1);
-// h1.innerHTML = '<i>Americayaa<i>' // Changing HTML
-// // h1.textContent = '<i>Americayaa<i>'
-// h1.style.color = 'pink'
-// h1.style.backgroundColor = 'grey' // Changing CSS
-
-// // var box = document.querySelector('#box')
-// var box1 = document.getElementById('box') // selecting element using id
-// box.innerHTML = 'Hello'
-// box.style.backgroundColor = 'royalblue'
-
-// var btn = document.querySelector('button')
-// btn.addEventListener('click',function() {
-//     h1.innerHTML = 'I am Alive!!'
-//     h1.style.backgroundColor = 'black'
-//     h1.style.fontSize = '60px'
-//     h1.style.textAlign = 'center'
-// })
+//  -- Dynamic DOM Manipulation
+        // --createElement
+        // --appendChild
+        // --removeChild
+        // --prepend
 
 
-var v1 = document.createElement('h1'); // element creation
-console.log(v1);
 
-var btn5 = document.querySelector('h1');
-var btn = document.querySelector('button');
-var main = document.querySelector('main')
-btn.addEventListener('click',function() {
-        // var v2 = document.createElement('h1');
-        // v2.innerHTML = 'hello monkeys!!'
-        // console.log(v2);
-        // main.appendChild(v2);
-        
-        
-        setTimeout(() => {
-                btn5.innerHTML="byee!!"
-        }, 1000);
-})
+//  -- Style Updates
+        // -- .style
+        // --classList (add,remove,toggle)
