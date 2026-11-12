@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    font-family: 'Archivo';
+}
+
+:root{
+    --x:-100px;
+    --y:-100px;
+}
+
+.main {
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    background: #ddd;
+    height: 100%;
+}
+
+#ui-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 175px;
+    padding: 10px;
+    border-radius: 22px;
+    font-family: Arial, sans-serif;
+}
+
+.dark {
+    background: #111;
+    color: white;
+}
+
+.light {
+    background: white;
+    color: #222;
+}
+
+.image {
+    height: 80px;
+    border-radius: 16px;
+    background: linear-gradient(130deg, #173b72, #f04a55, #ffb900);
+    position: relative;
+}
+
+.image span {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: white;
+    color: #222;
+    padding: 5px 9px;
+    border-radius: 12px;
+    font-size: 10px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 5px;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #eee;
+    color: #222;
+    display: grid;
+    place-items: center;
+}
+
+h3 {
+    font-size: 11px;
+    margin: 0;
+}
+
+p {
+    font-size: 9px;
+    margin: 3px 0;
+    color: #999;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    margin: 15px 5px;
+}
+
+.info small {
+    color: #999;
+    font-size: 7px;
+}
+
+button {
+    width: 100%;
+    border: 0;
+    border-radius: 15px;
+    padding: 8px;
+    background: #438cff;
+    color: white;
+    font-size: 9px;
+}
+
+.light button {
+    background: white;
+    color: #222;
+    border: 1px solid #ddd;
+}
+
+button:active{
+    scale: 0.95;
+}
+
+.spot-light{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(100px at var(--x) var(--y),transparent 80%,rgb(0, 0, 0));
+    pointer-events: none;
+}

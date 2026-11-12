@@ -1,3 +1,4 @@
+// 1.Dom Manipulation::
 // DOM - Document Object Model it allow Js to interact with HTML 
 //     - When a browser loads an HTML page, it converts the HTML document into a tree-like structure of objects. This structure is called the DOM.
 
@@ -102,3 +103,15 @@ console.log(h1);
 //  -- Style Updates
         // -- .style
         // --classList (add,remove,toggle)
+
+
+
+
+
+// 2. Events and Event Handling::
+//  -- Event Binding
+        // -- addEventListener
+        // -- removeEventListener
+
+// Common Events
+        //click, input, change, submit, mouseover, keyup 

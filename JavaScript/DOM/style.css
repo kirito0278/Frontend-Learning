@@ -26,3 +26,11 @@ button{
     padding: 5px 5px;
     border: 2px solid white;
 }
+
+/* property is similar to root variables */
+
+@property --bgColor{
+    syntax: "<colors>";
+    initial-value: red;
+    inherits: false;
+}
