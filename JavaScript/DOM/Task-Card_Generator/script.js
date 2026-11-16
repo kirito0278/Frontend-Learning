@@ -25,4 +25,12 @@ form.addEventListener('submit',function(dets){
     card.appendChild(p);
 
     body.appendChild(card);
+
+    
+    form.reset();
+    // inputs.forEach(function (inp) {
+    //     if(inp.type!=="submit"){
+    //         inp.value="";
+    //     }
+    // })
 })
