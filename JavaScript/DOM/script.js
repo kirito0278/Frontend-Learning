@@ -115,3 +115,24 @@ console.log(h1);
 
 // Common Events
         //click, input, change, submit, mouseover, keyup 
+
+// Event Objects -- target,type,preventDefault
+// Event Bubbling: An event travels from the target element upward to its parent elements.
+
+// Event Capturing: An event travels from the outer parent elements down toward the target.
+
+// stopPropagation(): Stops the event from propagating further.
+
+// Default event flow: Capturing → Target → Bubbling.
+
+var ul = document.querySelector("ul");
+ul.addEventListener("click",function(evt) {
+        evt.target.classList.toggle("lt");
+})
+
+// Event Delegation: A technique of handling events on multiple child elements by attaching a single event listener to their common parent.
+// - It works using Event Bubbling.
+// - event.target identifies the actual element that triggered the event.
+// - event.currentTarget identifies the element holding the event listener.
+// - Reduces the need for multiple event listeners.
+// - Works with dynamically created child elements.

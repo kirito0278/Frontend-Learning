@@ -1,6 +1,5 @@
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -16,7 +15,7 @@ html,body{
     width: 100px;
 } */
 
-main{
+/* main{
     height: 100%;
     width: 100%;
 }
@@ -25,7 +24,7 @@ button{
     margin: 10px;
     padding: 5px 5px;
     border: 2px solid white;
-}
+} */
 
 /* property is similar to root variables */
 
@@ -33,4 +32,8 @@ button{
     syntax: "<colors>";
     initial-value: red;
     inherits: false;
+}
+
+.lt{
+    text-decoration: line-through;
 }
